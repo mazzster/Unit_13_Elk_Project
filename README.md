@@ -139,6 +139,6 @@ Which file do you update to make Ansible run the playbook on a specific machine?
       10.1.0.4
       EOF
 
-The URL you will verify the ELK server is at __http://(ELK-VMpublicIP):5601/__
+The URL you will verify the ELK server is at __http://(ELK-VMpublicIP):5601/__ and will look like the following displayed below:
 
 ![Kibana Working](https://user-images.githubusercontent.com/85268980/138544651-9c893be3-80e1-49da-aa3a-663a2a7b3592.png)

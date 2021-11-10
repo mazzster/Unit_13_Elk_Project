@@ -4,9 +4,9 @@ The files in this repository were used to configure the network depicted below:
 
 ![Screen Shot 2021-10-22 at 11 25 22 PM](https://user-images.githubusercontent.com/85268980/138543676-8c9b61a5-cbe6-4c1f-919c-ac3d2cdcce1d.png)
 
-These have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. lternatively, select portions of the _playbook (yml) file_ may be used to install only certain pieces of it, such as Filebeat.
+These have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _playbook (yml) file_ may be used to install only certain pieces of it, such as Filebeat.
 
-![install-elk](https://user-images.githubusercontent.com/85268980/140457333-ab783814-6be0-4126-9624-4a362de68a60.png)
+![install-elk](https://github.com/mazzster/Unit_13_Elk_Project/blob/main/install-elk.png)
 
 
 This document contains the following details:

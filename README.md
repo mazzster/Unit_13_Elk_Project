@@ -59,7 +59,7 @@ _**Access Policies**_
 
 The machines on the internal network are not exposed to the public Internet. Only the JumpBox Provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 
-    A: Local Desktop IP: 184.96.185.20
+    A: Local Desktop IP
     
 Machines within the network can only be accessed by JumpBox Provisioner.
 

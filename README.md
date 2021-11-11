@@ -71,6 +71,7 @@ The Elk-VM is only accessbile via SSH from the Jump Box through web access from 
    | JumpBox |          Yes        |            Local Desktop IP: 184.96.185.20                |
    |  Web-1  |          No         |   Private IP: 10.0.0.4/ Load Balancer IP: 13.82.23.122    |
    |  Web-2  |          No         |   Private IP: 10.0.0.4/ Load Balancer IP: 13.82.23.122    |
+   |  Web-3  |          No         |   Private IP: 10.0.0.4/ Load Balancer IP: 13.82.23.122    |
    |  Elk-VM |          No         |   Private IP: 10.0.0.4/ Load Balancer IP: 13.82.23.122    |
 
 

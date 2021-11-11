@@ -50,7 +50,9 @@ The configuration details of each machine may be found below:
 |:-------:|:---------:|:----------:|:-----------------------:|:------------------------------------:|:------------------:|:-----------------------:|
 | JumpBox |  Gateway  |  10.0.0.4  |  Linux (Ubuntu 18.04)   | Standard B1s (1 vcpus, 1 GiB memory) |     22, 80         |Local Desktop IP Address|
 |  Web-1  | Webserver |  10.0.0.7  |  Linux (Ubuntu 18.04)   | Standard B1ms (1 vcpus, 2 GiB memory)|     22, 80         |Load Balancer Public IP: 13.82.23.122/ JumpBox IP: 10.0.0.4|
-|  Web-2  | Webserver |  10.0.0.9  |  Linux (Ubuntu 18.04)   | Standard B1ms (1 vcpus, 2 GiB memory)|     22, 80         |Load Balancer Public IP: 13.82.23.122/ JumpBox IP: 10.0.0.4||  Web-3  | Webserver |  10.0.0.8  |  Linux (Ubuntu 18.04)   | Standard B1ms (1 vcpus, 2 GiB memory)|     22, 80         |Load Balancer Public IP: 13.82.23.122/ JumpBox IP: 10.0.0.4||  Elk-VM | Webserver |  10.1.0.4  |  Linux (Ubuntu 18.04)   | Standard B2s (2 vcpus, 4 GiB memory) | 22, 80, 5601, 9200 |Load Balancer Public IP: 13.82.23.122/ JumpBox IP: 10.0.0.4|
+|  Web-2  | Webserver |  10.0.0.9  |  Linux (Ubuntu 18.04)   | Standard B1ms (1 vcpus, 2 GiB memory)|     22, 80         |Load Balancer Public IP: 13.82.23.122/ JumpBox IP: 10.0.0.4|
+|  Web-3  | Webserver |  10.0.0.8  |  Linux (Ubuntu 18.04)   | Standard B1ms (1 vcpus, 2 GiB memory)|     22, 80         |Load Balancer Public IP: 13.82.23.122/ JumpBox IP: 10.0.0.4||  
+Elk-VM | Webserver |  10.1.0.4  |  Linux (Ubuntu 18.04)   | Standard B2s (2 vcpus, 4 GiB memory) | 22, 80, 5601, 9200 |Load Balancer Public IP: 13.82.23.122/ JumpBox IP: 10.0.0.4|
 
 
 _**Access Policies**_

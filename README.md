@@ -1,8 +1,8 @@
-# Unit_13_Elk_Project
+# _Unit_13_Elk_Project_
 
 The files in this repository were used to configure the network depicted below:
 
-![Screen Shot 2021-10-22 at 11 25 22 PM](https://user-images.githubusercontent.com/85268980/138543676-8c9b61a5-cbe6-4c1f-919c-ac3d2cdcce1d.png)
+![ELK Project Diagram drawio](https://user-images.githubusercontent.com/85268980/141242411-a0b341ec-c25a-45ce-9b75-c35b72f0d6e4.png)
 
 These have been tested and used to generate a live ELK deployment on Azure. They can be used to recreate the entire deployment pictured above. Alternatively, select portions of the playbook (yml) file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -23,8 +23,7 @@ The following sections of this document contain:
   
        -How to Use the Ansible Build
 
-
-** A Description of the Topology**
+_**A Description of the Topology**_
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
@@ -47,15 +46,14 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 The configuration details of each machine may be found below:
 
 
-|   Name  |  Function | IP Address |    Operating System     |            Size of Machine           |
-|:-------:|:---------:|:----------:|:-----------------------:|:------------------------------------:|
-| JumpBox |  Gateway  |  10.0.0.4  |  Linux (Ubuntu 18.04)   | Standard B1s (1 vcpus, 1 GiB memory) |
-|  Web-1  | Webserver |  10.0.0.7  |  Linux (Ubuntu 18.04)   | Standard B1ms (1 vcpus, 2 GiB memory)|
-|  Web-2  | Webserver |  10.0.0.9  |  Linux (Ubuntu 18.04)   | Standard B1ms (1 vcpus, 2 GiB memory)|
-|  Web-3  | Webserver |  10.0.0.8  |  Linux (Ubuntu 18.04)   | Standard B1ms (1 vcpus, 2 GiB memory)| 
-|  Elk-VM | Webserver |  10.1.0.4  |  Linux (Ubuntu 18.04)   | Standard B2s (2 vcpus, 4 GiB memory) |
+|   Name  |  Function | IP Address |Operating System/ Version|            Size of Machine           |   Exposed Ports    | Allowed IP Addresses    |
+|:-------:|:---------:|:----------:|:-----------------------:|:------------------------------------:|:------------------:|:-----------------------:|
+| JumpBox |  Gateway  |  10.0.0.4  |  Linux (Ubuntu 18.04)   | Standard B1s (1 vcpus, 1 GiB memory) |     22, 80         |Local Desktop IP Address|
+|  Web-1  | Webserver |  10.0.0.7  |  Linux (Ubuntu 18.04)   | Standard B1ms (1 vcpus, 2 GiB memory)|     22, 80         |Load Balancer Public IP: 13.82.23.122/ JumpBox IP: 10.0.0.4|
+|  Web-2  | Webserver |  10.0.0.9  |  Linux (Ubuntu 18.04)   | Standard B1ms (1 vcpus, 2 GiB memory)|     22, 80         |Load Balancer Public IP: 13.82.23.122/ JumpBox IP: 10.0.0.4||  Web-3  | Webserver |  10.0.0.8  |  Linux (Ubuntu 18.04)   | Standard B1ms (1 vcpus, 2 GiB memory)|     22, 80         |Load Balancer Public IP: 13.82.23.122/ JumpBox IP: 10.0.0.4||  Elk-VM | Webserver |  10.1.0.4  |  Linux (Ubuntu 18.04)   | Standard B2s (2 vcpus, 4 GiB memory) | 22, 80, 5601, 9200 |Load Balancer Public IP: 13.82.23.122/ JumpBox IP: 10.0.0.4|
 
-**Access Policies**
+
+_**Access Policies**_
 
 The machines on the internal network are not exposed to the public Internet. Only the JumpBox Provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 
@@ -74,7 +72,7 @@ The Elk-VM is only accessbile via SSH from the Jump Box through web access from 
    |  Elk-VM |          No         |   Private IP: 10.0.0.4; Load Balancer IP: 13.82.23.122    |
 
 
-**Elk Configuration**
+_**Elk Configuration**_
 
 Using the command above, Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because of...
 
@@ -93,7 +91,7 @@ The following screenshot displays the result of running the 'sudo docker ps' com
 
 ![Screen Shot 2021-11-10 at 7 28 53 PM](https://user-images.githubusercontent.com/85268980/141226735-ca402d75-7df9-4db2-8129-cc0c0d6b606f.png)
 
-**Target Machines & Beats**
+_**Target Machines & Beats**_
 
 This ELK server is configured to monitor the following machines:
 
@@ -123,7 +121,7 @@ These Beats allow us to collect the following information from each machine:
     
    ![Metricbeat YML File](https://user-images.githubusercontent.com/85268980/141225068-a5e93d78-940b-47cb-b9d3-6f9d3b128822.png)
     
-**Using the Playbook**
+_**Using the Playbook**_
 
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
 SSH into the control node and follow the steps below:

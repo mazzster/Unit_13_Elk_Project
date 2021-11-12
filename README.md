@@ -42,7 +42,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
     Q: What does Metricbeat record?
     A: -Metricbeat will periodically collect metrics from OS or any services that run on a server, it then ships these metrics to any output that is tied to the configuration.
 
-The configuration details of each machine may be found below:
+The configuration details of each machine may be found listed below:
 
 
 |   Name  |  Function | IP Address |Operating System/ Version|            Size of Machine           |   Exposed Ports    | Allowed IP Addresses    |

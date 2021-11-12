@@ -8,8 +8,7 @@ These have been tested and used to generate a live ELK deployment on Azure. They
 
 The following is an example of an installation YAML file used in this project:
 
-![ELK-Install YML File](https://user-images.githubusercontent.com/85268980/141399444-a09e6100-7e45-4bc1-9488-731c7ef3c009.png)
-
+![Pentest YML File](https://user-images.githubusercontent.com/85268980/141399808-7e333d65-307d-4ea9-8592-e3090c3d25e8.png)
 
 The following sections of this document contains:
 
@@ -84,11 +83,20 @@ Using the command above, Ansible was used to automate configuration of the ELK m
        -Ansible being able to allow models of highly complex workflows in IT.
 
 The playbook implements the following tasks:
-   -Install Docker
-   -Install Elasticsearch
-   -Install Logstash
-   -Install Kibana
-   -Install Beats
+    
+    -Install Docker
+   
+    -Install Elasticsearch
+   
+    -Install Logstash
+   
+    -Install Kibana
+   
+    -Install Beats
+    
+The script listed below is the command used to install the ELK machine:
+
+![ELK-Install YML File](https://user-images.githubusercontent.com/85268980/141400803-9b2ca7e5-daaf-4d66-81e2-a7326a74e624.png)
 
 The following screenshot displays the result of running the 'sudo docker ps' command after successfully configuring the ELK instance.
 
@@ -114,15 +122,15 @@ These Beats allow us to collect the following information from each machine:
 
     -Filebeat monitors for log files and locations and collects log activities.(Filebeat: Lightweight Log Analysis & Elasticsearch)
     
-    The following is an example of a Filebeat command:
+   The following is an example of a Filebeat playbook command used for this project:
     
    ![Filebeat YML file](https://user-images.githubusercontent.com/85268980/141225132-78e6f466-82b8-4edb-9233-d7f7196db25b.png)
 
     -Metricbeat records metrics and statistical data from the operating system and from services running on the server.(Metricbeat: Lightweight Shipper for Metrics)
     
-    The following is an example of a Metricbeat command:
+   The following is an example of a Metricbeat playbook command used for this project:
     
-   ![Metricbeat YML File](https://user-images.githubusercontent.com/85268980/141225068-a5e93d78-940b-47cb-b9d3-6f9d3b128822.png)
+   ![Metricbeat Playbook YML File](https://user-images.githubusercontent.com/85268980/141403064-43ac3249-7968-48ec-b1c4-ae9165bbe607.png)
     
 _**Using the Playbook**_
 

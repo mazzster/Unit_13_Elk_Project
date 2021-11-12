@@ -8,7 +8,7 @@ These have been tested and used to generate a live ELK deployment on Azure. They
 
 The following is an example of an installation YAML file used in this project:
 
-![install-elk](https://github.com/mazzster/Unit_13_Elk_Project/blob/main/install-elk.png)
+![ELK-Install YML File](https://user-images.githubusercontent.com/85268980/141399444-a09e6100-7e45-4bc1-9488-731c7ef3c009.png)
 
 
 The following sections of this document contains:

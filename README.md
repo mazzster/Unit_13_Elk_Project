@@ -11,7 +11,7 @@ The following is an example of an installation YAML file used in this project:
 ![install-elk](https://github.com/mazzster/Unit_13_Elk_Project/blob/main/install-elk.png)
 
 
-The following sections of this document contain:
+The following sections of this document contains:
 
        -A Description of the Topology
    

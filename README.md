@@ -135,27 +135,21 @@ These Beats allow us to collect the following information from each machine:
 _**Using the Playbook**_
 
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
+
 SSH into the control node and follow the steps below:
 
       - Copy the ssh-keygen file to ssh public key.
       - Update the security rule file to include the IP address.
       - Run the playbook, and navigate to http://40.78.91.91:5601/app/kibana to check that the installation worked as expected.
 
-Which file is the playbook? Where do you copy it?
+The playbook file is _ansible-playbook.yml_ and should be copied under the location listed below:
 
+       - /etc/ansible/install-elk.yml
+       
+In order to make Ansible run the playbook on a specific machine, the _Hosts_ file must be updated as displayed below:
 
-Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?
+![Hosts txt File](https://user-images.githubusercontent.com/85268980/141412985-18cbb815-ca59-4fd9-934d-12e5083036f4.png)
 
-      $ cd /etc/ansible
-      $ cat > hosts <<EOF
-      [webservers]
-      10.0.0.7
-      10.0.0.9 
-      
-      [elk]
-      10.1.0.4
-      EOF
-
-In this scenario, the URL you will verify the ELK server is at __http://40.78.91.91:5601/__ and should look like the following displayed below:
+In this scenario, the URL you will verify the ELK server is at __http://40.78.91.91:5601/__. If the ELK machine is configured successfully, it should look like the webpage displayed below:
 
 ![Kibana Working](https://user-images.githubusercontent.com/85268980/138544651-9c893be3-80e1-49da-aa3a-663a2a7b3592.png)
